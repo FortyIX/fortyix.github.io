@@ -1,0 +1,120 @@
+body {
+	margin-left: 25%;
+	margin-right: 25%;
+	background: #FFFFFF;
+	color: black;
+}
+
+
+@media only screen and (max-width: 900px) and (min-width:600px) {
+  body {
+  	margin-left: 10%;
+	margin-right: 10%;
+	background: #FFFFFF;
+	color: black;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+  	margin-left: 0%;
+	margin-right: 0%;
+	background: #FFFFFF;
+	color: black;
+  }
+}
+
+
+p{
+	font-family: Monaco, sans-serif;
+	text-align: justify;
+}
+
+.navbar:link {
+  color: limegreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar:hover {
+  color: limegreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+.navbar-index:link {
+  color: limegreen;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navbar-index:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navbar-index:hover {
+  color: limegreen;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navbar-index:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+.title-name{
+	font-size: 30px;
+	font-family: Monaco, sans-serif;
+}
+
+.menu-text{
+	font-size: 15px;
+	font-family: Monaco, sans-serif;
+}
+
+
+.title-box{
+   display: flex;
+   align-items:center;
+}
+
+/*.title-img{
+	filter: grayscale(100%);
+}
+
+.title-img:hover{
+	filter: grayscale(0%);
+}  */
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: limegreen;
+   color: limegreen;
+   font-family: Monaco, sans-serif;
+   font-size: 15px;
+}
+
+
+.index-title{
+	font-size: 25px;
+	color: limegreen;
+}
