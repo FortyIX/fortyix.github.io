@@ -22,8 +22,12 @@ I am a software engineer who enjoys watching football, walking around and great 
 
 
 
+## About this site 
+- The website is being hosted on Netify
+- Icons used in this site are from [boxicons](https://github.com/atisawd/boxicons)
+- Icon of any social network platform used in this site may be a trademark of its owner
 
-<br/><br/><br/>
+
 <!-- <div class="info-notice">
 	This theme is named <b>The peaceful place you see firefly</b>
 </div> -->
