@@ -56,7 +56,7 @@
 
 		{% for eachWriting in collections.writings %}
 		<a class="navbar-index" href="{{eachWriting.url}}">{{ eachWriting.data.title}}</a> 
-		<span style="float:right;">@  {{ eachWriting.date.toLocaleDateString("en-GB",{ weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}}</span><br/><br/>
+		<span class="navbar-date">@  {{ eachWriting.date.toLocaleDateString("en-GB",{ weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}}</span><br/><br/>
 		{%- endfor %} 
 
   	</article> 
