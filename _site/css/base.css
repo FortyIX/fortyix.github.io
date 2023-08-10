@@ -1,33 +1,101 @@
 body {
-	margin-left: 25%;
-	margin-right: 25%;
-	background: #FFFFFF;
-	color: black;
+  width: auto;
+  background: #02040f;
+  z-index: -2;
+}
+
+#canvas{
+	margin-left: 20%;
+	margin-right: 20%;
+	background: transparent;
+	color: white;
+  position: absolute;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #02040f;
+  border-top: solid ghostwhite 1px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  margin-left: 24%;
+  height: 40px;
+
+
+
+.footer-content{
+  margin-left: 35%;
+  margin-top: 5px;
+  width: 50%;
+  display: flex;
+  align-items:center;
+}
 }
 
 
 @media only screen and (max-width: 900px) and (min-width:600px) {
-  body {
+  #canvas {
   	margin-left: 10%;
 	margin-right: 10%;
-	background: #FFFFFF;
-	color: black;
+	background: transparent;
+	color: white;
+  position: absolute;
   }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    background-color: #02040f;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top: solid ghostwhite 1px;
+    height: 40px;
+    display: flex;
+    align-items:center;
+ }
 }
 
 
 @media only screen and (max-width: 600px) {
-  body {
+  #canvas {
   	margin-left: 0%;
 	margin-right: 0%;
-	background: #FFFFFF;
-	color: black;
+	background: transparent;
+	color: white;
+  position: absolute;
   }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #02040f;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-left: 0%;
+    margin-right: 0%;
+    border-top: solid ghostwhite 1px;
+    height: 40px;
+    display: flex;
+    align-items:center;
+ }
+
 }
 
 
 p{
-	font-family: Monaco, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: justify;
 }
 
@@ -37,7 +105,7 @@ p{
   text-decoration: none;
 }
 .navbar:visited {
-  color: black;
+  color: limegreen;
   background-color: transparent;
   text-decoration: none;
 }
@@ -47,20 +115,43 @@ p{
   text-decoration: none;
 }
 .navbar:active {
-  color: black;
+  color: limegreen;
   background-color: transparent;
   text-decoration: none;
 }
 
 
-
-.navbar-index:link {
+.archive-link:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.archive-link:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.archive-link:hover {
   color: limegreen;
   background-color: transparent;
   text-decoration: underline;
 }
+.archive-link:active {
+  color: limegreen;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+
+
+.navbar-index:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
 .navbar-index:visited {
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -70,7 +161,7 @@ p{
   text-decoration: underline;
 }
 .navbar-index:active {
-  color: black;
+  color: limegreen;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -79,42 +170,46 @@ p{
 
 .title-name{
 	font-size: 30px;
-	font-family: Monaco, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .menu-text{
 	font-size: 15px;
-	font-family: Monaco, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
 .title-box{
    display: flex;
    align-items:center;
+   z-index:-1;
 }
 
-/*.title-img{
+.title-img{
+  background: black;
 	filter: grayscale(100%);
 }
 
 .title-img:hover{
+  background-color: transparent;
 	filter: grayscale(0%);
-}  */
-
-
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: limegreen;
-   color: limegreen;
-   font-family: Monaco, sans-serif;
-   font-size: 15px;
-}
+}  
 
 
 .index-title{
 	font-size: 25px;
 	color: limegreen;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }

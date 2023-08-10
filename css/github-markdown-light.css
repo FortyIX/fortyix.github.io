@@ -2,11 +2,11 @@
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   margin: 0;
-  background: #FFFFFF;
-  color: black;
+  background: transparent;
+  color: white;
   font-size: 16px;
   word-wrap: break-word;
-  font-family:  font-family: Monaco, sans-serif;;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .markdown-body .octicon {
@@ -101,7 +101,7 @@
   border-style: none;
   max-width: 100%;
   box-sizing: content-box;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 
 .markdown-body code,

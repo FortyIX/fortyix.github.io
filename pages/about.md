@@ -2,6 +2,12 @@
 layout: about.njk
 title: About
 ---
+
+<div class="info-notice">
+	When you walk on the way not yet to be lighted up, fireflies are with you.
+</div>
+
+
 I am a software engineer who enjoys watching football, walking around and great food. Coming from an interdisciplinary background, I have experience in robotics, telecommunication, software engineering and game development. I am a supporter of the Arsenal football club and barely miss their game. I play games, mostly city building, management and simulation games. 
 
 
@@ -18,8 +24,11 @@ I am a software engineer who enjoys watching football, walking around and great 
 
 
 <br/><br/><br/>
-<div class="normal-notice">
+<!-- <div class="info-notice">
+	This theme is named <b>The peaceful place you see firefly</b>
+</div> -->
+<!-- <div class="normal-notice">
 	This website is inspired by the Cactus White designed by <a href="https://github.com/probberechts">PROBBERECHTS</a>
-</div>
+</div> -->
 
 

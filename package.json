@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "github-markdown-css": "^5.2.0",
-    "mathjax": "^3.2.2"
+    "mathjax": "^3.2.2",
+    "particles.js": "^2.0.0"
   }
 }

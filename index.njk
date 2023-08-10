@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/general.css">
 	<link rel="stylesheet" href="css/github-markdown-light.css">
 	<script src="resrouces/tex-svg.js" id="MathJax-script" async></script>
+	<script src="resrouces/particles.js"></script>
     <title>{{ title }}</title>
 
 
@@ -29,8 +30,9 @@
 	</style>
 
   </head>
-	  <body>
-	  	<article class="markdown-body">
+	  <body id="stage">
+		<div id="canvas">	
+	  	 <article class="markdown-body"> 
 	  		<div class="title-box">
 				<img class="title-img" src="imgs/logo.png" height="60px" width="60px"> 
 				<span>
@@ -43,7 +45,7 @@
 				</span>
 			</div>
 			</br>
-			</br>
+			</br> 
 			<p>Welcome to my site! You will be able to read articles I write in a wide range and projects I developed for fun or for real business. I hope you can find things you are looking here.  Please browse in the way you like, Enjoy! 😊 </p>
 
 		<p>You can find me on <img style="vertical-align:middle" width="20px" height="20px" src="imgs/linkedin.png">, <img style="vertical-align:middle" width="20px" height="20px" src="imgs/github.png"> or with <img style="vertical-align:middle" width="20px" height="20px" src="imgs/email.png"></p>
@@ -54,12 +56,18 @@
 
 		{% for eachWriting in collections.writings %}
 		<a class="navbar-index" href="{{eachWriting.url}}">{{ eachWriting.data.title}}</a> 
-		<span>@  {{ eachWriting.date.toLocaleDateString("en-GB",{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}}</span>
-		{%- endfor %}
+		<span style="float:right;">@  {{ eachWriting.date.toLocaleDateString("en-GB",{ weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}}</span><br/><br/>
+		{%- endfor %} 
 
-  	</article>
-	 <div class="footer">
-	 &copy 2023 Fu Zhang
+  	</article> 
+	</div>
+
+
+	<div class="footer">
+		<div class="footer-content">
+	 &copy 2023 Fu Zhang &nbsp;&nbsp;
+    <img src="https://api.netlify.com/api/v1/badges/63ab84d6-b2f0-45c3-9c55-dda273f9a96d/deploy-status"></img>
+	</div>
 	</div>
     
   </body>
@@ -67,3 +75,8 @@
 </html>
 
 
+<script>
+particlesJS.load('stage', '/resrouces/particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+</script>

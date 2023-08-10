@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="../../css/general.css">
 	<link rel="stylesheet" href="../../css/github-markdown-light.css">
 	<script src="../../resrouces/tex-svg.js" id="MathJax-script" async></script>
+	<script src="../../resrouces/particles.js"></script>
+
     <title>About</title>
 	<style>
 		.markdown-body {
@@ -27,7 +29,8 @@
 	</style>
 
   </head>
-  <body>
+ <body id="stage">
+	<div id="canvas">	
 	 <article class="markdown-body">
 	  		<div class="title-box">
 				<img class="title-img" src="../../imgs/logo.png" height="60px" width="60px"> 
@@ -42,7 +45,10 @@
 			</div>
 			</br>
 			</br>
-			<p>I am a software engineer who enjoys watching football, walking around and great food. Coming from an interdisciplinary background, I have experience in robotics, telecommunication, software engineering and game development. I am a supporter of the Arsenal football club and barely miss their game. I play games, mostly city building, management and simulation games.</p>
+			<div class="info-notice">
+	When you walk on the way not yet to be lighted up, fireflies are with you.
+</div>
+<p>I am a software engineer who enjoys watching football, walking around and great food. Coming from an interdisciplinary background, I have experience in robotics, telecommunication, software engineering and game development. I am a supporter of the Arsenal football club and barely miss their game. I play games, mostly city building, management and simulation games.</p>
 <h2>Work experiences</h2>
 <ul>
 <li>2021 - 2023  Software Engineer @ Huawei</li>
@@ -54,15 +60,25 @@
 <li>1st Class Honours, BEng Electronic and Information Engineering @ King's College London</li>
 </ul>
 <p><br/><br/><br/></p>
-<div class="normal-notice">
+<!-- <div class="info-notice">
+	This theme is named <b>The peaceful place you see firefly</b>
+</div> -->
+<!-- <div class="normal-notice">
 	This website is inspired by the Cactus White designed by <a href="https://github.com/probberechts">PROBBERECHTS</a>
-</div>
+</div> -->
 
   	</article>
+	</div>
   </body>
  <div class="footer">
   		&copy 2023 Fu Zhang
 </div>
 
 </html>
+
+<script>
+particlesJS.load('stage', '../../resrouces/particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+</script>
 

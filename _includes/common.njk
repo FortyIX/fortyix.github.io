@@ -28,12 +28,13 @@
 	</style>
 
   </head>
-  <body>
+  	<body id="stage">
+		<div id="canvas">	
 	 <article class="markdown-body">
 	  		<div class="title-box">
 				<img class="title-img" src="../../../imgs/logo.png" height="60px" width="60px"> 
 				<span>
-					<span class="title-name">FU ZHANG</span> <br/>
+					<span class="title-name">{{title}}</span> <br/>
 					<span class="menu-text">
 						<a class="navbar" href="/">Home</a> | 
 						<a class="navbar" href="../../about">About</a> | 
@@ -45,6 +46,7 @@
 			</br>
 			{{ content | safe }}
   	</article>
+	</div>
     	 <div class="footer">
 	 &copy 2023 Fu Zhang
 	</div>

@@ -27,7 +27,8 @@
 	</style>
 
   </head>
-  <body>
+	<body id="stage">
+	<div id="canvas">	
 	 <article class="markdown-body">
 	  		<div class="title-box">
 				<img class="title-img" src="../../imgs/logo.png" height="60px" width="60px"> 
@@ -47,10 +48,11 @@
 			{% for eachWriting in collections.writings %}
 			<span style="color: limegreen; font-size: 20px;">
 			{{eachWriting.date.getDay() + 1}}-{{eachWriting.date.getMonth() + 1}}-{{eachWriting.date.getFullYear() }}</span> &nbsp;&nbsp;&nbsp;&nbsp;
-			 <a style="font-size: 20px" class="navbar" href="{{eachWriting.url}}">{{eachWriting.data.title}}</a>
+			 <a style="font-size: 20px" class="archive-link" href="{{eachWriting.url}}">{{eachWriting.data.title}}</a><br/>
 			{%- endfor %}
 			
   	</article>
+	</div>
   </body>
  <div class="footer">
 	 &copy 2023 Fu Zhang
