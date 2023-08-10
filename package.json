@@ -13,10 +13,5 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
-  },
-  "dependencies": {
-    "github-markdown-css": "^5.2.0",
-    "mathjax": "^3.2.2",
-    "particles.js": "^2.0.0"
   }
 }
