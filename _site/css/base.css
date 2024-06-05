@@ -1,14 +1,31 @@
 html, body {
   margin: 0;
   height: 100%;
-  background: #02040f;
+  /* background: #FFE699; */
+  background: rgb(244, 243, 243);
+  scroll-behavior: smooth;
 }
+
+
+#stage {
+  margin: 0;
+  height: 100%;
+  background: rgb(244, 243, 243);
+}
+
+
+#stage2 {
+  margin: 0;
+  height: 100%;
+  background: rgb(244, 243, 243);
+}
+
 
 #canvas{
 	margin-left: 20%;
 	margin-right: 20%;
 	background: transparent;
-	color: white;
+	color: black;
   position: absolute;
 }
 
@@ -23,8 +40,8 @@ html, body {
   left: 0;
   bottom: 0;
   width: 60%;
-  background-color: #02040f;
-  color: white;
+  background-color: #fff1c8;
+  color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 15px;
   margin-left: 20%;
@@ -39,7 +56,7 @@ html, body {
   bottom: 0;
   width: 60%;
   background-color: #02040f;
-  color: white;
+  color: black;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 15px;
   margin-left: 20%;
@@ -63,7 +80,7 @@ html, body {
   margin-left: 10%;
 	margin-right: 10%;
 	background: transparent;
-	color: white;
+	color: black;
   position: absolute;
   }
 
@@ -73,7 +90,7 @@ html, body {
     bottom: 0;
     width: 80%;
     background-color: #02040f;
-    color: white;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     margin-left: 10%;
@@ -99,7 +116,7 @@ html, body {
   	margin-left: 0%;
 	margin-right: 0%;
 	background: transparent;
-	color: white;
+	color: black;
   position: absolute;
   }
 
@@ -109,7 +126,7 @@ html, body {
     bottom: 0;
     width: 90%;
     background-color: #02040f;
-    color: white;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     margin-left: 0%;
@@ -124,7 +141,7 @@ html, body {
     bottom: 0;
     width: 90%;
     background-color: #02040f;
-    color: white;
+    color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     margin-left: 5%;
@@ -177,12 +194,12 @@ p{
 
 
 .archive-link:link {
-  color: white;
+  color: black;
   background-color: transparent;
   text-decoration: underline;
 }
 .archive-link:visited {
-  color: white;
+  color: black;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -201,12 +218,12 @@ p{
 
 
 .navbar-index:link {
-  color: white;
+  color: black;
   background-color: transparent;
   text-decoration: underline;
 }
 .navbar-index:visited {
-  color: white;
+  color: black;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -224,8 +241,19 @@ p{
 
 
 .title-name{
-	font-size: 30px;
+	font-size: 60px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-name-front{
+  font-size: 80px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-box-front{
+  display: flex;
+  margin-top: 40%;
+  align-items:center;
 }
 
 .menu-text{
@@ -238,16 +266,6 @@ p{
    display: flex;
    align-items:center;
 }
-
-.title-img{
-  background: black;
-	filter: grayscale(100%);
-}
-
-.title-img:hover{
-  background-color: transparent;
-	filter: grayscale(0%);
-}  
 
 
 .index-title{
