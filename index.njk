@@ -49,8 +49,8 @@
 			<span class="tag is-danger is-light">#cat person</span>
 
 			<br><br><br><br>
-			<a href="#intro"><button class="button is-success">Read about me ⬇️</button></a>
-			<a href="/pages/list"><button class="button is-info">Read my writings</button></a>
+			<a href="#intro"><button class="button is-success is-rounded">Read about me ⬇️</button></a>
+			<a href="/pages/list"><button class="button is-info is-rounded">Read my writings</button></a>
 		</div>
 	</div>
 
@@ -64,15 +64,39 @@
 				<div class="card">
 					<div class="card-content">
 						<div class="content">
-							<p>Welcome to my site! You will be able to read articles I write in a wide range and
-								projects I developed for fun or for real business. I hope you can find things you are
-								looking here. Please browse in the way you like, Enjoy! 😊 </p>
+							<p> I have been programming since 2019 and have solid interdisciplinary skills and
+								experiences across computer science, electronic engineering and software engineering.
+							</p>
 						</div>
 					</div>
 				</div>
 
-				{# <button class="button">Test</button> #}
 
+
+
+
+				<h2> 🧩Career </h2>
+				<div class="card">
+					<div class="card-content">
+						<div class="media">
+							<div class="media-left">
+								<figure class="image is-48x48">
+									<img src="https://bulma.io/assets/images/placeholders/64x64.png"
+										alt="Placeholder image" />
+								</figure>
+							</div>
+							<div class="media-content">
+								<p class="title is-4">John Smith</p>
+								<p class="subtitle is-6">@johnsmith</p>
+														<div class="content">
+							<time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+						</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
 				<br><br>
 
 
@@ -90,5 +114,8 @@
 <script>
 	particlesJS.load('stage', '/resrouces/particlesjs-config.json', function () {
 		console.log('callback - particles.js config loaded');
+	});
+	particlesJS.load('intro', '/resrouces/particlesjs-config.json', function () {
+		console.log('callback - particles.js config loaded for about');
 	});
 </script>
