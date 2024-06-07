@@ -68,7 +68,6 @@ body::-webkit-scrollbar {
 }
 
 
-
 @media only screen and (max-width: 1100px) and (min-width:700px) {
   #canvas {
   margin-left: 10%;
@@ -87,6 +86,7 @@ body::-webkit-scrollbar {
     font-size: 60px;
     font-weight: 600;
   }
+
 
 }
 
@@ -109,9 +109,6 @@ body::-webkit-scrollbar {
     font-weight: 600;
   }
 
-  .title-img{
-    visibility: hidden;
-  }
 
 }
 
