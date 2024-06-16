@@ -43,16 +43,18 @@
 					<span class="title-name-front">FU ZHANG</span> <span class="title-name-chn"> |张辅</span> <br />
 				</span>
 			</div>
-			<span class="tag is-primary tag-space ">Developer</span>
-			<span class="tag is-link tag-space ">Piano Player</span>
-			<span class="tag is-info tag-space ">Clarient Player</span>
-			<span class="tag is-success tag-space tag-fot">Football fan</span>
-			<span class="tag is-warning tag-space tag-vim ">Vim person</span>
-			<span class="tag is-danger tag-space tag-cat">cat person</span>
+
+			<!-- Change Tags -->
+			<span class="tag is-primary tag-space ">DEVELOPER</span>
+			<span class="tag is-link tag-space ">PIANO & CLARINET PLAYER</span>
+			<span class="tag is-success tag-space">Football fan</span>
+			<span class="tag is-warning tag-space tag-vim ">VIM PERSON</span>
+			<span class="tag is-danger tag-space tag-cat">CAT PERSON</span>
 
 			<br><br><br><br>
-			<a href="#intro"><button class="button is-danger is-light">READ ABOUT ME 😺</button></a>
-			<a href="#writings"><button class="button is-link  is-light">WRITINGS 🖊️</button></a>
+			<!-- Nav buttons -->
+			<a href="#intro"><button class="button is-danger is-light">[Z] READ ABOUT ME 😺</button></a>
+			<a href="#writings"><button class="button is-link  is-light">[X] WRITINGS 🖊️</button></a>
 		</div>
 	</div>
 
@@ -70,9 +72,40 @@
 					<p> I have been programming since 2019 and have solid interdisciplinary skills and
 						experiences across computer science, electronic engineering and software engineering.
 					</p>
-					<br>
-					<p> You may reach me via <a href="">Github</a>, <a href="">Facebook</a> or <a href="">LinkedIn</a>
-					</p>
+
+					<h4>Reach me via</h4>
+					<button 
+						onclick="onClickEmail()">
+					
+						<img class="soical-link" width="48" height="48" src="https://img.icons8.com/fluency/48/new-post.png" alt="EMAIL"/></button>
+					<a href="https://github.com/FortyIX"><img class="soical-link" width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="GITHUB"/></a>
+					<a href="/"><img class="soical-link" width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="FACEBOOK"/></a>
+					<a href="/"><img class="soical-link" width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="LINKEDIN"/></a>
+					
+					<div id="emails" class="box" style="display: none;">
+						<table class="table is-bordered is-hoverable">
+							<tbody>
+								<tr>
+									<td>
+										Work
+									</td>
+									<td>
+										test@test.t1est
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Personal
+									</td>
+									<td>
+										test@test.t1est
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<button onclick="onEmailClose()"><span class="emails_close_btn">CLICK HERE TO HIDE</span></button>
+					</div>
 				</div>
 
 
@@ -81,7 +114,6 @@
 
 
 				<h2> 🧩Career </h2>
-
 
 				<div class="grid grid is-col-min-12 column-gap-1">
 					<div class="cell">
@@ -99,6 +131,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- DIVIDER -->
 					<div class="cell">
 						<div class="card profile profile-scheme-hw">
 							<div class="card-content">
@@ -114,6 +147,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- DIVIDER -->
 					<div class="cell">
 						<div class="card profile profile-scheme-kcl">
 							<div class="card-content">
@@ -129,6 +163,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- DIVIDER -->
 					<div class="cell">
 						<div class="card profile profile-scheme-km">
 							<div class="card-content">
@@ -144,7 +179,7 @@
 							</div>
 						</div>
 					</div>
-
+					<!-- DIVIDER -->
 					<div class="cell">
 						<div class="card profile profile-scheme-kcl">
 							<div class="card-content">
@@ -165,8 +200,6 @@
 				</div>
 				<br>
 				<h2> 🐟 Education </h2>
-
-
 				<div class="grid is-col-min-12">
 					<div class="cell">
 						<div class="card profile edu-scheme-past">
@@ -182,6 +215,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- DIVIDER -->
 					<div class="cell">
 						<div class="card profile edu-scheme-past">
 							<div class="card-content">
@@ -202,7 +236,7 @@
 			</div>
 		</div>
 
-			<div id="writings">
+	<div id="writings">
 		<div class="markdown-body">
 			<div class="content">
 				<h1>🖊️ Writings</h1>
@@ -216,17 +250,68 @@
 	</div>
 
 
+	<footer class="footer">
+		<div class="markdown-body">
+		<div class="content has-text-centered foot-height">
+		  <p>
+ 
+ Designed by <strong> FU ZHANG</strong> accessibly in partial aligns with <a href="https://www.w3.org/WAI/WCAG22/quickref/"> Web Content Accessibility Guidelines</a>.  Icons by <a href="https://icons8.com">Icons8</a>.
+			
+		</p>
+		  <h5>
+			© 2024 Fu Zhang. All right reserved
+		  </h5>
+		</div>
 	</div>
+	  </footer>
 
-
+	</div>
 
 </body>
 
 </html>
 
 
+
 <script>
+
+
 	particlesJS.load('stage', './resrouces/particlesjs-config.json', function () {
 		console.log('callback - particles.js config loaded');
 	});
+
+	function onClickEmail(){
+			document.getElementById("emails").style.display = '';  
+	}
+	function onEmailClose(){
+		document.getElementById("emails").style.display = 'none';  
+	}
+
+	document.addEventListener('keydown', function(event) {
+		
+		eleIntro = document.getElementById('intro')
+		eleStage = document.getElementById('stage')
+		eleWriting = document.getElementById('writings')
+		
+		if (event.code == 'KeyZ') {
+			eleIntro.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+				inline: 'nearest'
+			});
+		}else if(event.code == 'KeyC'){
+			eleStage.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+				inline: 'nearest'
+			});
+		}else if(event.code == 'KeyX'){
+			eleWriting.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+				inline: 'nearest'
+			});
+		}
+		
+});
 </script>

@@ -123,6 +123,24 @@ body::-webkit-scrollbar {
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.soical-link{
+  transform-origin: 1 1;
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+
+.soical-link:hover{
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.emails_close_btn{
+  color: #1279ff;
+  transform-origin: 1 1;
+  transition: transform .25s, visibility .25s ease-in;
+}
+.emails_close_btn:hover{
+  text-decoration-line: underline;
+}
 
 @media only screen and (max-width: 1100px) and (min-width:700px) {
   #canvas {
@@ -190,99 +208,10 @@ p{
 	text-align: justify;
 }
 
-
-.navbar:link {
-  color: #92C7CF;
-  background-color: transparent;
-  text-decoration: none;
-}
-.navbar:visited {
-  color: #92C7CF;
-  background-color: transparent;
-  text-decoration: none;
-}
-.navbar:hover {
-  color: #92C7CF;
-  background-color: transparent;
-  text-decoration: none;
-}
-.navbar:active {
-  color: #92C7CF;
-  background-color: transparent;
-  text-decoration: none;
+.foot-height{
+  height: 50px;
 }
 
-
-.archive-link:link {
-  color: black;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.archive-link:visited {
-  color: black;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.archive-link:hover {
-  color: limegreen;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.archive-link:active {
-  color: limegreen;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-
-
-
-.navbar-index:link {
-  color: black;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.navbar-index:visited {
-  color: black;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.navbar-index:hover {
-  color: limegreen;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.navbar-index:active {
-  color: limegreen;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-
-
-.title-name{
-	font-size: 60px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
-.menu-text{
-	font-size: 15px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
-.title-box{
-   display: flex;
-   align-items:center;
-}
-
-
-.index-title{
-	font-size: 25px;
-	color: limegreen;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
