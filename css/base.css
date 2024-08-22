@@ -87,24 +87,24 @@ body::-webkit-scrollbar {
 
 
 .profile-scheme-km{
-  /* border-left: #1279ff 12px solid ; */
+  border-left: #1279ff 12px solid ;
 }
 
 .profile-scheme-kcl{
-  /* border-left: #f10000 12px solid ; */
+  border-left: #f10000 12px solid ;
 }
 
 .profile-scheme-hw{
-  /* border-left: #ff4b4b 12px solid ; */
+  border-left: #ff4b4b 12px solid ;
 }
 
 .profile {
-  /* transform-origin: 1 1;
-  transition: transform .25s, visibility .25s ease-in; */
+  transform-origin: 1 1;
+  transition: transform .25s, visibility .25s ease-in;
 }
 
 .profile-scheme-active{
-  /* border-left: #81ff93 12px solid ; */
+  border-left: #81ff93 18px solid ;
 }
 
 .profile-scheme-current{
@@ -123,39 +123,10 @@ body::-webkit-scrollbar {
   border-left: #81ff93 12px solid ;
 }
 
-.card{
-  box-shadow: none;
+
+.card:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
-.profile:before {
-  content : "";
-  position: absolute;
-  left    : 0;
-  border-radius: 50%;
-  z-index: 100;
-  top  : 15%;
-  width  : 20px;
-  height   : 35%;  /* or 100px */
-  background: white;
-  border-style: dotted;
-}
-
-.profile-time{
-  float: right;
-}
-
-
-.padding-box{
-  height: 40px;
-}
-
-
-
-.profile-content{
-  position: relative;
-  left: 30px;
-}
-
 
 .soical-link{
   transform-origin: 1 1;
