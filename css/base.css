@@ -86,47 +86,7 @@ body::-webkit-scrollbar {
 }
 
 
-.profile-scheme-km{
-  border-left: #1279ff 12px solid ;
-}
 
-.profile-scheme-kcl{
-  border-left: #f10000 12px solid ;
-}
-
-.profile-scheme-hw{
-  border-left: #ff4b4b 12px solid ;
-}
-
-.profile {
-  transform-origin: 1 1;
-  transition: transform .25s, visibility .25s ease-in;
-}
-
-.profile-scheme-active{
-  border-left: #81ff93 18px solid ;
-}
-
-.profile-scheme-current{
-  background-color: #81ff93;
-}
-
-.profile-scheme-past{
-  border-left: white 12px solid ;
-}
-
-.edu-scheme-past{
-  border-left: white 12px solid ;
-}
-
-.edu-scheme-active{
-  border-left: #81ff93 12px solid ;
-}
-
-
-.card:hover {
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
 
 .soical-link{
   transform-origin: 1 1;
@@ -166,6 +126,10 @@ body::-webkit-scrollbar {
     font-weight: 200;
   }
 
+  footer{
+    position: relative;
+    top: 10%;
+  }
 
 }
 
@@ -204,9 +168,60 @@ body::-webkit-scrollbar {
     visibility: hidden;
   }
 
+  footer{
+    position: relative;
+    top: 50%;
+  }
 
 }
 
+
+
+@media only screen and (max-width: 400px) {
+  #canvas {
+  margin-left: 5%;
+	margin-right: 5%;
+	background: transparent;
+	color: black;
+  position: absolute;
+  }
+
+  .title-name-front{
+    font-size: 30px;
+  }
+
+  .title-name-chn{
+    font-size: 30px;
+    font-weight: 1050;
+  }
+
+  .tag-vim {
+    visibility: hidden;
+  }
+
+  .tag-clr {
+    visibility: hidden;
+  }
+
+  .tag-fot {
+    visibility: hidden;
+  }
+
+  .tag-cat {
+    visibility: hidden;
+  }
+
+  footer{
+    position: relative;
+    top: 70%;
+  }
+
+}
+
+
+.chart-card{
+  margin-bottom: 5px;
+}
 
 p{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -214,12 +229,9 @@ p{
 }
 
 
-
-.foot-height{
-  height: 50px;
+footer{
+  margin-top: 20%;
 }
-
-
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .example::-webkit-scrollbar {

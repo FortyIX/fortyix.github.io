@@ -5,12 +5,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel='stylesheet' href='https://chinese-fonts-cdn.deno.dev/packages/zqfs/dist/ZhuqueFangsong-Regular/result.css' /> 
+	<link rel='stylesheet'
+		href='https://chinese-fonts-cdn.deno.dev/packages/zqfs/dist/ZhuqueFangsong-Regular/result.css' />
 
 
-	<!-- Bulma -->
 	<link rel="icon" type="image/x-icon" href="imgs/cat_ocean_96.ico">
-	<link rel="stylesheet" href="css/bulma.css">
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<!-- chart.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+		integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/general.css">
@@ -49,16 +60,15 @@
 			</div>
 
 			<!-- Change Tags -->
-			<span class="tag is-primary tag-space ">ENTJ</span>
-			<span class="tag is-link tag-space ">PIANO & CLARINET PLAYER</span>
-			<span class="tag is-success tag-space">Football fan</span>
-			<span class="tag is-warning tag-space tag-vim ">VIM PERSON</span>
-			<span class="tag is-danger tag-space tag-cat">CAT PERSON</span>
+			<span class="badge rounded-pill bg-primary">ENTJ</span>
+			<span class="badge rounded-pill bg-secondary ">PIANO & CLARINET PLAYER</span>
+			<span class="badge rounded-pill bg-success ">Football fan</span>
+			<span class="badge rounded-pill bg-danger  tag-vim ">VIM PERSON</span>
+			<span class="badge rounded-pill bg-primary tag-cat">CAT PERSON</span>
 
 			<br><br><br><br>
 			<!-- Nav buttons -->
-			<a href="#intro"><button class="button is-danger is-light">[Z] READ ABOUT ME 😺</button></a>
-			<a href="#writings"><button class="button is-link  is-light">[X] POSTS 🖊️</button></a>
+			<a href="#intro"><button class="btn btn-outline-light">[Z] READ ABOUT ME 😺</button></a>
 		</div>
 	</div>
 
@@ -66,169 +76,154 @@
 
 
 		<div class="markdown-body">
-			<div class="content">
+			<nav>
+				<div class="nav nav-pills" id="nav-tab" role="tablist">
+					<button class="nav-link active" id="nav-home-tab" data-bs-toggle="pill" data-bs-target="#nav-home"
+						type="button" role="tab" aria-controls="nav-home" aria-selected="true">😊 Welcome to my
+						site</button>
+					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="pill" data-bs-target="#nav-bg"
+						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">🐧
+						Backgrounds</button>
+					<button class="nav-link" id="nav-contact-tab" data-bs-toggle="pill" data-bs-target="#nav-post"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">🧐 Posts</button>
 
-				<h1>😊 Greeting!</h1>
-				<!-- <div class="notification is-success">
-					[NOTICE BOARD] No notice at the moment
-				</div> -->
-				<div class="content">
-					<p> I have have solid interdisciplinary and
-					 experiences across computer science, electronic engineering and software engineering. Worked in Telecom industry.
+					<!-- EXTENSION	 -->
+
+					<!-- <button class="nav-link" id="nav-reserve-tab" data-bs-toggle="tab" data-bs-target="#nav-reserve1"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reserved 1</button> -->
+
+					<!-- <button class="nav-link" id="nav-reserve2-tab" data-bs-toggle="tab" data-bs-target="#nav-reserve2"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reserved 2</button> -->
+				</div>
+				<!-- END OF TAB TITLE -->
+			</nav>
+
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="pills-home-tab">
+					</br>
+					<p> Greetings from Fu Zhang (张辅). I explore and research in the field of human-computer interactions
+						with multidisciplinary experiences in computer science, electronic engineering and software
+						engineering.
+						I graduated from King's College London with a first BEng and a distinction MSc degree. Followed
+						by a software engineer career at Huawei.
+						I am currently employed in the Hong Kong Polytechnic University as a research assistant.
 					</p>
+					<p> I am a fan of Arsenal FC and Henan FC. Off work, I often watching football, playing video games,
+						watching animation and playing music, and very importantly, travel.
+					</p>
+
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="card chart-card">
+								<div class="card-body">
+									<canvas id="activity-chart" style="width:50%;"></canvas>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="card chart-card">
+								<div class="card-body">
+									<canvas id="impact-chart" style="width:50%;"></canvas>
+								</div>
+							</div>
+						</div>
+						<!-- END OF CHART DISPLAY -->
+					</div>
 
 					<h4>Reach me via</h4>
-					<button 
-						onclick="onClickEmail()">
-					
-						<img class="soical-link" width="48" height="48" src="https://img.icons8.com/fluency/48/new-post.png" alt="EMAIL"/></button>
-					<a href="https://github.com/FortyIX"><img class="soical-link" width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="GITHUB"/></a>
-					<a href="/"><img class="soical-link" width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="FACEBOOK"/></a>
-					<a href="/"><img class="soical-link" width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="LINKEDIN"/></a>
-					
-					<div id="emails" class="box" style="display: none;">
-						<table class="table is-bordered is-hoverable">
-							<tbody>
-								<tr>
-									<td>
-										Work
-									</td>
-									<td>
-										test@test.t1est
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Personal
-									</td>
-									<td>
-										test@test.t1est
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<a type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+						aria-controls="collapseExample">
+						<img class="soical-link" width="48" height="48"
+							src="https://img.icons8.com/fluency/48/new-post.png" alt="EMAIL" />
+					</a>
 
-						<button onclick="onEmailClose()"><span class="emails_close_btn">CLICK HERE TO HIDE</span></button>
+					<a href="https://github.com/FortyIX"><img class="soical-link" width="48" height="48"
+							src="https://img.icons8.com/fluency/48/github.png" alt="GITHUB" /></a>
+					<a href="/"><img class="soical-link" width="48" height="48"
+							src="https://img.icons8.com/fluency/48/linkedin.png" alt="LINKEDIN" /></a>
+
+					<div class="collapse" id="collapseExample">
+						<div class="card card-body">
+							<table class="table is-bordered is-hoverable">
+								<tbody>
+									<tr>
+										<td>
+											Work
+										</td>
+										<td>
+											test@test.t1est
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Personal
+										</td>
+										<td>
+											test@test.t1est
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<!-- END OF EMAIL INFO PANEL -->
 					</div>
+					<!-- end of first tab -->
+				</div>
+				<div class="tab-pane fade" id="nav-bg" role="tabpanel" aria-labelledby="nav-profile-tab">Under dev A
+
+					<!-- end of 2nd tab -->
 				</div>
 
+				<div class="tab-pane fade" id="nav-post" role="tabpanel" aria-labelledby="nav-contact-tab">under dev B
 
-
-
-
-
-				<h2> 🧩Career </h2>
-
-				<div class="grid grid is-col-min-12 column-gap-1">
-					<div class="cell">
-						<div class="card profile profile-scheme-active">
-							<div class="card-content">
-								<div class="media">
-									<div class="media-content">
-										<p class="title is-6">Freelencer Developer</p>
-										<p class="subtitle is-6">Anywhere</p>
-										<div class="content">
-											<time datetime="2016-1-1">Any time</time>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- DIVIDER -->
-					<div class="cell">
-						<div class="card profile profile-scheme-hw">
-							<div class="card-content">
-								<div class="media">
-									<div class="media-content">
-										<p class="title is-6">Software Engineer</p>
-										<p class="subtitle is-6">Huawei Technologies Co., Ltd. </p>
-										<div class="content">
-											<time datetime="2016-1-1">Dec 2021 - May 2023</time>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- DIVIDER -->
-
-
-
-				</div>
-				<br>
-				<h2> 🐟 Education </h2>
-				<div class="grid is-col-min-12">
-					<div class="cell">
-						<div class="card profile edu-scheme-past">
-							<div class="card-content">
-								<div class="media">
-									<div class="media-content">
-										<p class="title is-6">Master of Science</p>
-										<p class="title is-6">Distinction in Advanced Computing</p>
-										<p class="subtitle is-6">King's College London</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<!-- DIVIDER -->
-					<div class="cell">
-						<div class="card profile edu-scheme-past">
-							<div class="card-content">
-								<div class="media">
-									<div class="media-content">
-										<p class="title is-6">Bachleor of Engineering</p>
-										<p class="title is-6">1st Class in Elec and Info Engineering</p>
-										<p class="subtitle is-6">King's College London</p>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
+					<!-- end of 3rd tab -->
 				</div>
 
+				<div class="tab-pane fade" id="nav-reserve1" role="tabpanel" aria-labelledby="nav-reserve1-tab">reserved
+					for dev
+
+					<!-- end of 4th tab -->
+				</div>
+
+				<div class="tab-pane fade" id="nav-reserve2" role="tabpanel" aria-labelledby="nav-reserve2-tab">
+					reserved2 for dev
+
+					<!-- end of 4th tab -->
+				</div>
+
+				<!-- END OF TAB CONTENT -->
+			</div>
+
+			<!-- markdown	 -->
+		</div>
+		<!-- intro -->
+	</div>
+
+
+	<footer>
+		<div class="markdown-body">
+			<div style="text-align: center;">
+				<small>
+					The font Zhuque Fangsong is a work of <a href="https://trionestype.com/">TrionesType
+					</a>
+					hosted on <a href="https://chinese-font.netlify.app/fonts/zqfs/zhuquefangsong-regular/">Chinese
+						Web
+						Fonts Plan</a>. Icons
+					by <a href="https://icons8.com">Icons8</a> </br>© 2024 Fu Zhang. All right reserved
+				</small>
 			</div>
 		</div>
-
-	<div id="writings">
-		<div class="markdown-body">
-			<div class="content">
-				<h1>🖊️ Posts</h1>
-
-				<div class="content">
-					<p> TO BE DEVELOPED
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	</footer>
 
 
-	<footer class="footer">
-		<div class="markdown-body">
-		<div class="content has-text-centered foot-height">
-			<span>
-			Designed by <strong> FU ZHANG</strong> accessibly in partial aligns with 
-			<a href="https://www.w3.org/WAI/WCAG22/quickref/"> Web Content Accessibility Guidelines</a>. Icons by <a href="https://icons8.com">Icons8</a>
-		</span>
-		<br>
-		<span>
-			The chinese font (朱雀仿宋) used is a work of <a href="https://trionestype.com/">TrionesType 璇璣造字</a> hosted on <a href="https://chinese-font.netlify.app/fonts/zqfs/zhuquefangsong-regular/">Chinese Web Fonts Plan</a>
-		</span>	
-		  <h5>
-			© 2024 Fu Zhang. All right reserved
-		  </h5>
-		</div>
-	</div>
-	  </footer>
-
-	</div>
 
 </body>
+
+
+
+
 
 </html>
 
@@ -237,42 +232,124 @@
 <script>
 
 
+	new Chart("activity-chart", {
+		type: "doughnut",
+		data: {
+			labels: [
+				"With Computer", "Watching football", "Travel", "Playing music"],
+			datasets: [{
+				data: [40, 30, 20, 10],
+				backgroundColor: [
+					'rgb(33, 28, 106)',
+					'rgb(89, 180, 195)',
+					'rgb(116, 226, 145)',
+					'rgb(239, 243, 150)'
+				],
+				hoverOffset: 4
+			}]
+		},
+		options: {
+			plugins: {
+				title: {
+					display: true,
+					text: 'My typical off work activities'
+				}
+			}
+		}
+	});
+
+
+	new Chart("impact-chart", {
+		type: "radar",
+		data: {
+			labels: [
+				'Happiness',
+				'Tiredness',
+				'Relaxing',
+				'Anxiety',
+				'Fun',
+				'Stimulus',
+			],
+			datasets: [{
+				label: 'With computer',
+				data: [30, 60, 50, 10, 40, 20],
+				fill: true,
+				backgroundColor: 'rgba(33, 28, 106, 0.2)',
+				borderColor: 'rgb(33, 28, 106)',
+				pointBackgroundColor: 'rgb(33, 28, 106)',
+				pointBorderColor: '#fff',
+				pointHoverBackgroundColor: '#fff',
+				pointHoverBorderColor: 'rgb(33, 28, 106)'
+			}, {
+				label: 'Watching football',
+				data: [70, 30, 40, 60, 70, 80],
+				fill: true,
+				backgroundColor: 'rgba(89, 180, 195, 0.2)',
+				borderColor: 'rgb(89, 180, 195)',
+				pointBackgroundColor: 'rgb(89, 180, 195)',
+				pointBorderColor: '#fff',
+				pointHoverBackgroundColor: '#fff',
+				pointHoverBorderColor: 'rgb(89, 180, 195)'
+			}, {
+				label: 'Travel',
+				data: [90, 60, 80, 10, 60, 50],
+				fill: true,
+				backgroundColor: 'rgba(116, 226, 145, 0.2)',
+				borderColor: 'rgb(116, 226, 145)',
+				pointBackgroundColor: 'rgb(116, 226, 145)',
+				pointBorderColor: '#fff',
+				pointHoverBackgroundColor: '#fff',
+				pointHoverBorderColor: 'rgb(116, 226, 145)'
+			}, {
+				label: 'Playing music',
+				data: [80, 40, 60, 10, 90, 30],
+				fill: true,
+				backgroundColor: 'rgba(239, 243, 150, 0.2)',
+				borderColor: 'rgb(239, 243, 150)',
+				pointBackgroundColor: 'rgb(239, 243, 150)',
+				pointBorderColor: '#fff',
+				pointHoverBackgroundColor: '#fff',
+				pointHoverBorderColor: 'rgb(239, 243, 150)'
+			}
+
+			]
+		},
+		options: {
+			plugins: {
+				title: {
+					display: true,
+					text: 'These activities brought me'
+				}
+			}
+		}
+	});
+
+
+
 	particlesJS.load('stage', './resrouces/particlesjs-config.json', function () {
 		console.log('callback - particles.js config loaded');
 	});
 
-	function onClickEmail(){
-			document.getElementById("emails").style.display = '';  
-	}
-	function onEmailClose(){
-		document.getElementById("emails").style.display = 'none';  
-	}
 
-	document.addEventListener('keydown', function(event) {
-		
+	document.addEventListener('keydown', function (event) {
+
 		eleIntro = document.getElementById('intro')
 		eleStage = document.getElementById('stage')
 		eleWriting = document.getElementById('writings')
-		
+
 		if (event.code == 'KeyZ') {
 			eleIntro.scrollIntoView({
 				behavior: 'smooth',
 				block: 'start',
 				inline: 'nearest'
 			});
-		}else if(event.code == 'KeyC'){
+		} else if (event.code == 'KeyC') {
 			eleStage.scrollIntoView({
 				behavior: 'smooth',
 				block: 'start',
 				inline: 'nearest'
 			});
-		}else if(event.code == 'KeyX'){
-			eleWriting.scrollIntoView({
-				behavior: 'smooth',
-				block: 'start',
-				inline: 'nearest'
-			});
 		}
-		
-});
+
+	});
 </script>
