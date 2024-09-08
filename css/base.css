@@ -185,6 +185,7 @@ footer{
     display: none;
   }
 
+
 }
 
 
@@ -229,7 +230,6 @@ footer{
     background:var(--content-bg-color);
   }
 
-
   .small-nav{
     display: flex;
   }
@@ -237,6 +237,7 @@ footer{
   .ful-nav{
     display: none;
   }
+
 }
 
 
