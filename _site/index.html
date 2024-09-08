@@ -25,8 +25,6 @@
 
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/general.css">
-	<link rel="stylesheet" href="css/github-markdown-light.css">
-	<script src="resrouces/tex-svg.js" id="MathJax-script" async></script>
 	<script src="resrouces/particles.js"></script>
 	<title>Fu Zhang's Website</title>
 
@@ -77,8 +75,7 @@
 			<nav>
 				<div class="nav nav-pills" id="nav-tab" role="tablist">
 					<button class="nav-link active" id="nav-home-tab" data-bs-toggle="pill" data-bs-target="#nav-home"
-						type="button" role="tab" aria-controls="nav-home" aria-selected="true">😊 Welcome to my
-						site</button>
+						type="button" role="tab" aria-controls="nav-home" aria-selected="true">😊 Greeting !</button>
 					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="pill" data-bs-target="#nav-bg"
 						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">🐧
 						Backgrounds</button>
@@ -99,36 +96,52 @@
 			<div class="tab-content" id="pills-tabContent">
 				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="pills-home-tab">
 					</br>
-					<p> Greetings from Fu Zhang (张辅). I explore and research in the field of human-computer interactions
-						with multidisciplinary experiences in computer science, electronic engineering and software
-						engineering.
-						I graduated from King's College London with a first BEng and a distinction MSc degree. Followed
-						by a software engineer career at Huawei.
-						I am currently employed in the Hong Kong Polytechnic University as a research assistant.
-					</p>
-					<p> I am a fan of Arsenal FC and Henan FC. Off work, I often watching football, playing video games,
-						watching animation and playing music, and very importantly, travel.
-					</p>
-
+					<div style="margin-bottom: 60px;">
+						<p> Greetings from Fu Zhang (张辅). I explore and research in the field of human-computer
+							interactions
+							with multidisciplinary experiences in computer science, electronic engineering and software
+							engineering.
+							I graduated from King's College London with a first BEng and a distinction MSc degree.
+							Followed
+							by a software engineer career at Huawei.
+							I am currently employed in the Hong Kong Polytechnic University as a research assistant.
+						</p>
+						<p> I am a fan of Arsenal FC and Henan FC. Off work, I often watching football, playing video
+							games,
+							watching animation and playing music, and very importantly, travel.
+						</p>
+					</div>
 
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-4">
 							<div class="card chart-card">
 								<div class="card-body">
 									<canvas id="activity-chart" style="width:50%;"></canvas>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-4">
 							<div class="card chart-card">
 								<div class="card-body">
 									<canvas id="impact-chart" style="width:50%;"></canvas>
 								</div>
 							</div>
 						</div>
+
+						<div class="col-sm-4 mb-3 mb-sm-0">
+							<div class="card vertical-info-card">
+								<div class="card-body">
+									<h5 class="card-title">My personalitiy</h5>
+									<p class="card-text"><span class="personality-text">Commander (ENTJ-A)</span></p>
+									<a href="https://www.16personalities.com/profiles/56c82721b9666"
+										class="btn btn-primary active">View profile</a>
+								</div>
+							</div>
+							<!-- END OF INFO CARD -->
+						</div>
 						<!-- END OF CHART DISPLAY -->
 					</div>
-
+					</br></br>
 					<h4>Reach me via</h4>
 					<a type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
 						aria-controls="collapseExample">
@@ -167,6 +180,7 @@
 						</div>
 						<!-- END OF EMAIL INFO PANEL -->
 					</div>
+
 					<!-- end of first tab -->
 				</div>
 				<div class="tab-pane fade" id="nav-bg" role="tabpanel" aria-labelledby="nav-profile-tab">Under dev A
@@ -203,17 +217,20 @@
 		<div class="markdown-body">
 			<div style="text-align: center;">
 				<small>
-					The font Zhuque Fangsong is a work of <a href="https://trionestype.com/">TrionesType
+					The font Zhuque Fangsong is a work of <a style="color: white;"
+						href="https://trionestype.com/">TrionesType
 					</a>
-					hosted on <a href="https://chinese-font.netlify.app/fonts/zqfs/zhuquefangsong-regular/">Chinese
+					hosted on <a style="color: white;"
+						href="https://chinese-font.netlify.app/fonts/zqfs/zhuquefangsong-regular/">Chinese
 						Web
 						Fonts Plan</a>. Icons
-					by <a href="https://icons8.com">Icons8</a> </br>© 2024 Fu Zhang. All right reserved
+					by <a style="color: white;" href="https://icons8.com">Icons8</a> </br>© 2024 Fu Zhang. All right
+					reserved
 				</small>
 			</div>
 		</div>
 	</footer>
-	
+
 
 </body>
 
@@ -248,6 +265,9 @@
 				title: {
 					display: true,
 					text: 'My typical off work activities'
+				},
+				legend: {
+					display: false,
 				}
 			}
 		}
@@ -314,6 +334,9 @@
 				title: {
 					display: true,
 					text: 'These activities brought me'
+				},
+				legend: {
+					display: false,
 				}
 			}
 		}

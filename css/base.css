@@ -8,10 +8,6 @@
 
 /* background: rgb(244, 243, 243); */
 
-a:link{
-  color: #1CB5E0;
-}
-
 
 html, body {
   margin: 0;
@@ -43,7 +39,10 @@ body::-webkit-scrollbar {
 }
 
 
-
+footer{
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+  color: #fff;
+}
 
 
 #canvas{
@@ -78,6 +77,10 @@ body::-webkit-scrollbar {
 
 .tag-space{
   margin-top: 8px;
+}
+
+.personality-text{
+  color: palevioletred;
 }
 
 
@@ -123,7 +126,7 @@ body::-webkit-scrollbar {
 
   #intro{
     margin: 0;
-    height: 150%;
+    height: 100%;
     background: var(--content-bg-color);
   }
 
@@ -167,7 +170,7 @@ body::-webkit-scrollbar {
 
   #intro{
     margin: 0;
-    height: 170%;
+    height: 120%;
     background: var(--content-bg-color);
   }
 
@@ -212,7 +215,7 @@ body::-webkit-scrollbar {
 
   #intro{
     margin: 0;
-    height: 210%;
+    height: 220%;
     background:var(--content-bg-color);
   }
 
@@ -222,6 +225,12 @@ body::-webkit-scrollbar {
 .chart-card{
   margin-bottom: 5px;
 }
+
+.vertical-info-card{
+  margin-bottom: 18px;
+}
+
+
 
 p{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
