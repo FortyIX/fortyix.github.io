@@ -72,15 +72,15 @@
 
 	<div id="intro">
 		<div class="markdown-body">
-			<nav>
-				<div class="nav nav-pills" id="nav-tab" role="tablist">
-					<button class="nav-link active" id="nav-home-tab" data-bs-toggle="pill" data-bs-target="#nav-home"
+			<nav class="ful-nav">
+				<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
 						type="button" role="tab" aria-controls="nav-home" aria-selected="true">😊 Greeting !</button>
-					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="pill" data-bs-target="#nav-bg"
+					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-bg"
 						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">🐧
-						Backgrounds</button>
-					<button class="nav-link" id="nav-contact-tab" data-bs-toggle="pill" data-bs-target="#nav-post"
-						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">🧐 Posts</button>
+						About me</button>
+					<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-post"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">🧐 Writings&Shares</button>
 
 					<!-- EXTENSION	 -->
 
@@ -89,8 +89,32 @@
 
 					<!-- <button class="nav-link" id="nav-reserve2-tab" data-bs-toggle="tab" data-bs-target="#nav-reserve2"
 						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reserved 2</button> -->
+
 				</div>
-				<!-- END OF TAB TITLE -->
+				<!-- END OF TAB TITLE FULL SIZE -->
+			</nav>
+
+
+			<nav class="small-nav">
+				<div class="nav nav-tabs" id="nav-tab" role="tablist">
+					<button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+						type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+					<button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-bg"
+						type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+						About</button>
+					<button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-post"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Writings&Shares</button>
+
+					<!-- EXTENSION	 -->
+
+					<!-- <button class="nav-link" id="nav-reserve-tab" data-bs-toggle="tab" data-bs-target="#nav-reserve1"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reserved 1</button> -->
+
+					<!-- <button class="nav-link" id="nav-reserve2-tab" data-bs-toggle="tab" data-bs-target="#nav-reserve2"
+						type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reserved 2</button> -->
+
+				</div>
+				<!-- END OF TAB TITLE MOBILE SIZE -->
 			</nav>
 
 			<div class="tab-content" id="pills-tabContent">
@@ -252,12 +276,12 @@
 			datasets: [{
 				data: [40, 30, 20, 10],
 				backgroundColor: [
-					'rgb(33, 28, 106)',
+					'rgb(13, 73, 255)',
 					'rgb(89, 180, 195)',
 					'rgb(116, 226, 145)',
-					'rgb(239, 243, 150)'
+					'rgb(252, 26, 10)'
 				],
-				hoverOffset: 4
+				hoverOffset: 0
 			}]
 		},
 		options: {
@@ -289,12 +313,12 @@
 				label: 'With computer',
 				data: [30, 60, 50, 10, 40, 20],
 				fill: true,
-				backgroundColor: 'rgba(33, 28, 106, 0.2)',
-				borderColor: 'rgb(33, 28, 106)',
-				pointBackgroundColor: 'rgb(33, 28, 106)',
+				backgroundColor: 'rgba(13, 73, 255, 0.2)',
+				borderColor: 'rgb(13, 73, 255)',
+				pointBackgroundColor: 'rgb(13, 73, 255)',
 				pointBorderColor: '#fff',
 				pointHoverBackgroundColor: '#fff',
-				pointHoverBorderColor: 'rgb(33, 28, 106)'
+				pointHoverBorderColor: 'rgb(13, 73, 255)'
 			}, {
 				label: 'Watching football',
 				data: [70, 30, 40, 60, 70, 80],
@@ -319,12 +343,12 @@
 				label: 'Playing music',
 				data: [80, 40, 60, 10, 90, 30],
 				fill: true,
-				backgroundColor: 'rgba(239, 243, 150, 0.2)',
-				borderColor: 'rgb(239, 243, 150)',
-				pointBackgroundColor: 'rgb(239, 243, 150)',
+				backgroundColor: 'rgba(252, 26, 10, 0.2)',
+				borderColor: 'rgb(252, 26, 10)',
+				pointBackgroundColor: 'rgb(252, 26, 10)',
 				pointBorderColor: '#fff',
 				pointHoverBackgroundColor: '#fff',
-				pointHoverBorderColor: 'rgb(239, 243, 150)'
+				pointHoverBorderColor: 'rgb(252, 26, 10)'
 			}
 
 			]

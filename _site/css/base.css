@@ -30,6 +30,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.small-nav{
+  display: none;
+}
 
 
 #intro{
@@ -174,6 +177,13 @@ footer{
     background: var(--content-bg-color);
   }
 
+  .small-nav{
+    display: flex;
+  }
+
+  .ful-nav{
+    display: none;
+  }
 
 }
 
@@ -219,6 +229,14 @@ footer{
     background:var(--content-bg-color);
   }
 
+
+  .small-nav{
+    display: flex;
+  }
+
+  .ful-nav{
+    display: none;
+  }
 }
 
 
