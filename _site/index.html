@@ -129,7 +129,7 @@
 						</p>
 					</div>
 
-					<div class="container text-center">
+					<div class="container">
 						<div class="row">
 						  <div class="col">
 
@@ -252,106 +252,6 @@
 
 
 <script>
-
-
-	new Chart("activity-chart", {
-		type: "doughnut",
-		data: {
-			labels: [
-				"With Computer", "Watching football", "Travel", "Playing music"],
-			datasets: [{
-				data: [40, 30, 20, 10],
-				backgroundColor: [
-					'rgb(13, 73, 255)',
-					'rgb(89, 180, 195)',
-					'rgb(116, 226, 145)',
-					'rgb(252, 26, 10)'
-				],
-				hoverOffset: 0
-			}]
-		},
-		options: {
-			plugins: {
-				title: {
-					display: true,
-					text: 'My typical off work activities'
-				},
-				legend: {
-					display: false,
-				}
-			}
-		}
-	});
-
-
-	new Chart("impact-chart", {
-		type: "radar",
-		data: {
-			labels: [
-				'Happiness',
-				'Tiredness',
-				'Relaxing',
-				'Anxiety',
-				'Fun',
-				'Stimulus',
-			],
-			datasets: [{
-				label: 'With computer',
-				data: [30, 60, 50, 10, 40, 20],
-				fill: true,
-				backgroundColor: 'rgba(13, 73, 255, 0.2)',
-				borderColor: 'rgb(13, 73, 255)',
-				pointBackgroundColor: 'rgb(13, 73, 255)',
-				pointBorderColor: '#fff',
-				pointHoverBackgroundColor: '#fff',
-				pointHoverBorderColor: 'rgb(13, 73, 255)'
-			}, {
-				label: 'Watching football',
-				data: [70, 30, 40, 60, 70, 80],
-				fill: true,
-				backgroundColor: 'rgba(89, 180, 195, 0.2)',
-				borderColor: 'rgb(89, 180, 195)',
-				pointBackgroundColor: 'rgb(89, 180, 195)',
-				pointBorderColor: '#fff',
-				pointHoverBackgroundColor: '#fff',
-				pointHoverBorderColor: 'rgb(89, 180, 195)'
-			}, {
-				label: 'Travel',
-				data: [90, 60, 80, 10, 60, 50],
-				fill: true,
-				backgroundColor: 'rgba(116, 226, 145, 0.2)',
-				borderColor: 'rgb(116, 226, 145)',
-				pointBackgroundColor: 'rgb(116, 226, 145)',
-				pointBorderColor: '#fff',
-				pointHoverBackgroundColor: '#fff',
-				pointHoverBorderColor: 'rgb(116, 226, 145)'
-			}, {
-				label: 'Playing music',
-				data: [80, 40, 60, 10, 90, 30],
-				fill: true,
-				backgroundColor: 'rgba(252, 26, 10, 0.2)',
-				borderColor: 'rgb(252, 26, 10)',
-				pointBackgroundColor: 'rgb(252, 26, 10)',
-				pointBorderColor: '#fff',
-				pointHoverBackgroundColor: '#fff',
-				pointHoverBorderColor: 'rgb(252, 26, 10)'
-			}
-
-			]
-		},
-		options: {
-			plugins: {
-				title: {
-					display: true,
-					text: 'These activities brought me'
-				},
-				legend: {
-					display: false,
-				}
-			}
-		}
-	});
-
 
 
 	particlesJS.load('stage', './resrouces/particlesjs-config.json', function () {
