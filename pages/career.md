@@ -36,13 +36,13 @@
     }  
     .nav-bar-mobile {
         display:none;
+        margin-bottom: 20px;
     }
 
     .nav-bar-default {
         display:block;
+        margin-bottom: 20px;
     }
-
-
     .current-page {
         font-weight: bold;
         text-decoration: underline;
@@ -68,10 +68,12 @@
 
         .nav-bar-default{
           display:none;
+          margin-bottom: 20px;
         }
 
         .nav-bar-mobile{
           display:block;
+          margin-bottom: 20px;
         }
 
         .nav-item-mobile{
@@ -109,7 +111,7 @@
 
 </style>
 
-## Career
+# Career
 
 ### 💼 Work Experience
 <div style="display: flex; align-items: center; width: 100%; margin-top: 20px; margin-bottom: 20px; justify-content: flex-start;">

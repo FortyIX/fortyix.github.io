@@ -1,7 +1,7 @@
 <html>
 <body>
   <nav class="nav-bar-default">
-    <a class="nav-item" href="/">Home</a>
+    <a class="nav-item" href="/" onclick="runTyper()">Home</a>
     <a class="nav-item current-page" href="/pages/hello">Intro</a>
     <a class="nav-item" href="/pages/career">Career</a>
     <a class="nav-item" href="/pages/writing">Writing</a>
@@ -36,10 +36,12 @@
     }  
     .nav-bar-mobile {
         display:none;
+        margin-bottom: 20px;
     }
 
     .nav-bar-default {
         display:block;
+        margin-bottom: 20px;
     }
 
 
@@ -68,10 +70,12 @@
 
         .nav-bar-default{
           display:none;
+          margin-bottom: 20px;
         }
 
         .nav-bar-mobile{
           display:block;
+          margin-bottom: 20px;
         }
 
         .nav-item-mobile{
@@ -86,7 +90,7 @@
         font-size: 30px;
         text-decoration: underline;
         text-decoration-thickness: 3px;
-         display:block;
+        display:none;
 
     }
     .current-page {
@@ -109,16 +113,16 @@
 
 </style>
 
-## Greetings
-
+# Greetings
+> Hej means hello in Swedish. In case you are curious 😉.
 <p style="font-size:18px; line-height:1.5; text-align:justify">Greetings from Fu Zhang,张辅 in chinese hanzi, or you may call me Jerry.  👋 I explore and research in the field of human-computer interactions with multidisciplinary experiences in computer science, electronic engineering and software engineering. I graduated from King's College London with a first BEng and a distinction MSc degree. Followed by a software engineer career at Huawei. I am currently employed in the Hong Kong Polytechnic University as a research assistant.  <br /><br /> I am a fan of Arsenal FC and Henan FC. Off work, I often watching football ⚽, playing video games 🎮, watching animation 📺 and playing music 🪈, and very importantly, travel ✈️. 
 
 </p>
 
 <h2> You may find me </h2>
 
-[![logo](https://img.icons8.com/doodle/64/linkedin--v2.png ':size=70x70')](/) &nbsp;&nbsp;
-[![logo](https://img.icons8.com/doodle/64/github--v1.png" ':size=70x70')](/) &nbsp;&nbsp;
+[![logo](https://img.icons8.com/doodle/64/linkedin--v2.png ':size=70x70')](https://www.linkedin.com/in/fuzhang049/) &nbsp;&nbsp;
+[![logo](https://img.icons8.com/doodle/64/github--v1.png" ':size=70x70')]([/](https://github.com/nablafx)) &nbsp;&nbsp;
 
 <h2>Contact me</h2>
 

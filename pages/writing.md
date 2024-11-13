@@ -1,7 +1,7 @@
 <html>
 <body>
   <nav class="nav-bar-default">
-    <a class="nav-item" href="/">Home</a>
+    <a class="nav-item" href="/" onclick="startTyper()">Home</a>
     <a class="nav-item" href="/pages/hello">Intro</a>
     <a class="nav-item" href="/pages/career">Career</a>
     <a class="nav-item current-page" href="/pages/writing">Writing</a>
@@ -36,13 +36,13 @@
     }  
     .nav-bar-mobile {
         display:none;
+        margin-bottom: 20px;
     }
 
     .nav-bar-default {
         display:block;
+        margin-bottom: 20px;
     }
-
-
     .current-page {
         font-weight: bold;
         text-decoration: underline;
@@ -68,10 +68,12 @@
 
         .nav-bar-default{
           display:none;
+          margin-bottom: 20px;
         }
 
         .nav-bar-mobile{
           display:block;
+          margin-bottom: 20px;
         }
 
         .nav-item-mobile{
@@ -109,7 +111,7 @@
 
 </style>
 
-## Writing
+# Writing
 
 Nothing yet.
 
