@@ -58,6 +58,28 @@
         text-decoration: none;
         display:none;
     }
+    .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: left;
+        }
+    .card h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+  .card h3 {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0;
+
+    .fact-squre{
+        display: inline-block;
+
+    }
+
 
     
 
@@ -115,16 +137,35 @@
 
 # Greetings
 > Hej means hello in Swedish. In case you are curious 😉.
-<p style="font-size:18px; line-height:1.5; text-align:justify">Greetings from Fu Zhang,张辅 in chinese hanzi, or you may call me Jerry.  👋 I explore and research in the field of human-computer interactions with multidisciplinary experiences in computer science, electronic engineering and software engineering. I graduated from King's College London with a first BEng and a distinction MSc degree. Followed by a software engineer career at Huawei. I am currently employed in the Hong Kong Polytechnic University as a research assistant.  <br /><br /> I am a fan of Arsenal FC and Henan FC. Off work, I often watching football ⚽, playing video games 🎮, watching animation 📺 and playing music 🪈, and very importantly, travel ✈️. 
-
+<p style="font-size:18px; line-height:1.5; text-align:justify">Greetings from Fu Zhang,张辅 in chinese hanzi, or you may call me Jerry.  👋 I explore and research in the field of human-computer interactions with multidisciplinary experiences in computer science, electronic engineering and software engineering. I graduated from King's College London with a first BEng and a distinction MSc degree. Followed by a software engineer career at Huawei. I am currently employed in the Hong Kong Polytechnic University as a research assistant. 
 </p>
 
-<h2> You may find me </h2>
+<h4>Facts about me</h4>
+<div class="fact-squre" style="display: flex; justify-content: space-around; flex-wrap: wrap;"> <!-- Use Flexbox -->
+    <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
+        <h1>😇 Personality type</h1>
+        <h3><a style="color:purple" href="https://www.16personalities.com/profiles/56c82721b9666">Commander (ENTJ-A) ></a></h3>
+    </div>
+    <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
+        <h1>⚽ Favorite football team </h1>
+        <h3 style="color:darkred">Arsenal FC and Henan FC</h3>
+    </div>
+    <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
+        <h1>🥳Favorite things</h1>
+        <h3 style="color:darkblue">listening the rain, read books, and travel around</h3>
+    </div>
+      <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
+        <h1>Favorite food 🍲</h1>
+        <h3>Hotpot</h3>
+    </div>
+</div>
+
+<h2> You may reach me at:</h2>
 
 [![logo](https://img.icons8.com/doodle/64/linkedin--v2.png ':size=70x70')](https://www.linkedin.com/in/fuzhang049/) &nbsp;&nbsp;
 [![logo](https://img.icons8.com/doodle/64/github--v1.png" ':size=70x70')]([/](https://github.com/nablafx)) &nbsp;&nbsp;
 
-<h2>Contact me</h2>
+<h2>Contact me:</h2>
 
 jerry-fu.zhang@polyu.edu.hk
 
