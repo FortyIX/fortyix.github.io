@@ -73,16 +73,7 @@
   .card h3 {
             font-size: 18px;
             color: #555;
-            margin: 5px 0;
-
-    .fact-squre{
-        display: inline-block;
-
-    }
-
-
-    
-
+            margin: 5px 0;}
     @media only screen and (max-width: 600px) {
         .nav-bar{
           width: 20%;
@@ -142,20 +133,20 @@
 
 <h4>Facts about me</h4>
 <div class="fact-squre" style="display: flex; justify-content: space-around; flex-wrap: wrap;"> <!-- Use Flexbox -->
-    <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
+    <div class="card" style="flex: 1 0 230px; margin-right: 20px; margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
         <h1>😇 Personality type</h1>
         <h3><a style="color:purple" href="https://www.16personalities.com/profiles/56c82721b9666">Commander (ENTJ-A) ></a></h3>
     </div>
-    <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
+    <div class="card" style="flex: 1 0 230px; margin-right: 20px; margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
         <h1>⚽ Favorite football team </h1>
         <h3 style="color:darkred">Arsenal FC and Henan FC</h3>
     </div>
-    <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
+    <div class="card" style="flex: 1 0 230px; margin-right: 20px; margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
         <h1>🥳Favorite things</h1>
         <h3 style="color:darkblue">listening the rain, read books, and travel around</h3>
     </div>
-      <div class="card" style="flex: 1 0 300px; margin: 10px;"> <!-- Ensures a minimum width and margin -->
-        <h1>Favorite food 🍲</h1>
+      <div class="card" style="flex: 1 0 230px; margin-right: 20px;  margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
+        <h1>🍲 Favorite food</h1>
         <h3>Hotpot</h3>
     </div>
 </div>
