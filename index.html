@@ -7,6 +7,10 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 </head>
 <body>
   <div id="app"></div>
@@ -14,11 +18,50 @@
     window.$docsify = {
       coverpage: true,
       onlyCover: true,
+      hideSidebar: true,
+      routerMode: 'history',
       name: '',
-      repo: ''
+      repo: '',
+      mergeNavbar: true,
     }
+
+    window.onload = function() {
+      // var app = document.getElementById('typewriter');
+
+      // var typewriter = new Typewriter(app, {
+      //     loop: true,
+      //     delay:300,
+      // });
+
+      // typewriter.typeString('Fu Zhang')
+      //     .pauseFor(2500)
+      //     .deleteAll()
+      //     .typeString('张辅')
+      //     .pauseFor(2500)
+      //     .deleteAll()
+      //     .typeString('Jerry')
+      //     .pauseFor(2500)
+      //     .start();
+      
+        }
+          
+
+
+
+function showCloseMenu() {
+    concernedItems = document.querySelectorAll('.nav-item-mobile');
+    concernedItems.forEach((each_item) => {
+        if (each_item.style.display === 'none'){
+            each_item.style.display = 'block';
+        }else{
+            each_item.style.display = 'none';
+        }
+  });
+}
+
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 </body>
 </html>

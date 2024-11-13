@@ -7,9 +7,9 @@
     <img class="avatar" src="pics/longtime.jpg" alt="Logo">
   </a>
 
-  <h1 align="center" class="name" style="font-size: 65px; font-weight: bold;">Greet from Fu Zhang ✨</h1>
+  <h1 align="center" class="name" style="font-size: 65px; font-weight: bold;">Greeting from <span id="typewriter">Fu Zhang</span> ✨</h1>
   <h3>Research Assistant  🔬 | Photogapher 📷 | Developer for fun ⌨️</h3>
-  <h3 class="start-link" > <a href="/#/hello"><strong>Explore 🔍»</strong></a></h3>
+  <h3 class="start-link" > <a href="/pages/hello"><strong>Explore 🔍»</strong></a></h3>
 </div>
 <style>
 .start-link{
