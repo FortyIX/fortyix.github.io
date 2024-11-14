@@ -1,22 +1,5 @@
 <html>
-<body>
-  <nav class="nav-bar-default">
-    <a class="nav-item" href="/" onclick="runTyper()">Home</a>
-    <a class="nav-item current-page" href="/pages/hello">Intro</a>
-    <a class="nav-item" href="/pages/career">Career</a>
-    <a class="nav-item" href="/pages/writing">Writing</a>
-  </nav>
 
-
-  <nav class="nav-bar-mobile">
-    <a class="nav-item-opener" onclick="showCloseMenu()">Menu</a>
-    <a class="nav-item-mobile" href="/">Home</a>
-    <a class="nav-item-mobile current-page" href="/pages/hello">Intro</a>
-    <a class="nav-item-mobile" href="/pages/career">Career</a>
-    <a class="nav-item-mobile" href="/pages/writing">Writing</a>
-  </nav>
-
-</body>
 
 <style>
 
@@ -62,7 +45,7 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 100px;
             padding: 20px;
             text-align: left;
         }
@@ -74,6 +57,9 @@
             font-size: 18px;
             color: #555;
             margin: 5px 0;}
+  .container {
+        margin-top: 50px; margin-bottom: 50px; width: 80%; margin: 0 auto;
+        }
     @media only screen and (max-width: 600px) {
         .nav-bar{
           width: 20%;
@@ -120,34 +106,43 @@
         text-decoration: none;
         display: block;
     }
+    .container {
+        margin-top: 10px; margin-bottom: 10px; width: 100%;
+        margin-left: 0px; margin-right: 0px;
+      }
 
   }
 
 
 </style>
+<div class="container">
+
+  <nav class="nav-bar-default">
+    <a class="nav-item" href="/">Home</a>
+    <a class="nav-item current-page" href="/pages/hello">Intro</a>
+    <a class="nav-item" href="/pages/career">Career</a>
+    <a class="nav-item" href="/pages/writing">Writing</a>
+  </nav>
+
+
+  <nav class="nav-bar-mobile">
+    <a class="nav-item-opener" onclick="showCloseMenu()">Menu</a>
+    <a class="nav-item-mobile" href="/">Home</a>
+    <a class="nav-item-mobile current-page" href="/pages/hello">Intro</a>
+    <a class="nav-item-mobile" href="/pages/career">Career</a>
+    <a class="nav-item-mobile" href="/pages/writing">Writing</a>
+  </nav>
+
 
 # Greetings
 > Hej means hello in Swedish. In case you are curious 😉.
 <p style="font-size:18px; line-height:1.5; text-align:justify">Greetings from Fu Zhang,张辅 in chinese hanzi, or you may call me Jerry.  👋 I explore and research in the field of human-computer interactions with multidisciplinary experiences in computer science, electronic engineering and software engineering. I graduated from King's College London with a first BEng and a distinction MSc degree. Followed by a software engineer career at Huawei. I am currently employed in the Hong Kong Polytechnic University as a research assistant. 
 </p>
-
-<h4>Facts about me</h4>
-<div class="fact-squre" style="display: flex; justify-content: space-around; flex-wrap: wrap;"> <!-- Use Flexbox -->
+<br/>
+<div class="fact-squre" style="display: flex; width: 30%; justify-content: space-around; flex-wrap: wrap;"> <!-- Use Flexbox -->
     <div class="card" style="flex: 1 0 230px; margin-right: 20px; margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
-        <h1>😇 Personality type</h1>
+        <h1>Personality type</h1>
         <h3><a style="color:purple" href="https://www.16personalities.com/profiles/56c82721b9666">Commander (ENTJ-A) ></a></h3>
-    </div>
-    <div class="card" style="flex: 1 0 230px; margin-right: 20px; margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
-        <h1>⚽ Favorite football team </h1>
-        <h3 style="color:darkred">Arsenal FC and Henan FC</h3>
-    </div>
-    <div class="card" style="flex: 1 0 230px; margin-right: 20px; margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
-        <h1>🥳Favorite things</h1>
-        <h3 style="color:darkblue">listening the rain, read books, and travel around</h3>
-    </div>
-      <div class="card" style="flex: 1 0 230px; margin-right: 20px;  margin-bottom: 20px;"> <!-- Ensures a minimum width and margin -->
-        <h1>🍲 Favorite food</h1>
-        <h3>Hotpot</h3>
     </div>
 </div>
 
@@ -162,4 +157,6 @@ jerry-fu.zhang@polyu.edu.hk
 
 !> No spam, please!
 <footer style="font-size:12px; text-align:center; bottom:10px; width:100%;">(c) 2024 Fu Zhang. Icons by <a href="https://icons8.com/">Icons8</footer>
+
+</div>
 </html>

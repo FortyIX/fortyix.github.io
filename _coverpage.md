@@ -10,7 +10,9 @@
   </a>
 
   <h1 align="center" id="title-name">Hej! I am Fu Zhang ✨</h1>
-  <h3 id="role-subtitle"><span id="typewriter">Research Assistant  🔬</span></h3>
+  <h3 id="role-subtitle">Researcher 🔬 | Photographer 📷 | Traveler 🌎</h3>
+
+
   <h3 class="start-link" > <a href="/pages/hello"><strong>Explore 🔍»</strong></a></h3>
 </div>
 </body>
@@ -52,7 +54,7 @@
         color: #001F3F;
       }
       #role-subtitle{
-        font-size: 20px;
+        font-size: 16px;
       }
     .start-link{
       font-size: 1.3em;
